@@ -48,7 +48,6 @@ const closeMenu = () => {
 };
 
 const burgerMenu = () => {
-  console.log(control);
   control.addEventListener('click', () => body.classList.contains(MENU_OPENED_CLASS) ? closeMenu() : openMenu());
   // links.forEach(link => link.addEventListener('click', () => closeMenu()));
 };
