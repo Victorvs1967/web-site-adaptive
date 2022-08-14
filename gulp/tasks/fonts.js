@@ -1,6 +1,7 @@
 import fs from 'fs';
 import fonter from 'gulp-fonter';
 import ttf2woff2 from 'gulp-ttf2woff2';
+import ttf2woff from 'gulp-ttf2woff';
 
 export const otfToTtf = () => app.gulp.src(`${app.path.src.fonts}*.otf`)
   .pipe(app.plugins.plumber(app.plugins.notify.onError({
@@ -12,19 +13,16 @@ export const otfToTtf = () => app.gulp.src(`${app.path.src.fonts}*.otf`)
   }))
   .pipe(app.gulp.dest(`${app.path.src.fonts}`));
 
-export const ttfToWoff = () => app.gulp.src(`${app.path.src.fonts}*.ttf`)
+export const ttfToWoff = () => app.gulp.src(app.path.src.fonts)
   .pipe(app.plugins.plumber(app.plugins.notify.onError({
     title: 'FONTS',
     message: 'Error: <%= error.message %>'
   })))
-  // not working to woff convert!!!
-  .pipe(fonter({
-    formats: ['woff']
-  }))
-  .pipe(app.gulp.dest(`${app.path.dest.fonts}`))
-  .pipe(app.gulp.src(`${app.path.src.fonts}*.ttf`))
+  .pipe(ttf2woff())
+  .pipe(app.gulp.dest(app.path.dest.fonts))
+  .pipe(app.gulp.src(app.path.src.fonts))
   .pipe(ttf2woff2())
-  .pipe(app.gulp.dest(`${app.path.dest.fonts}`));
+  .pipe(app.gulp.dest(app.path.dest.fonts));
 
 export const fontsStyle = async () => {
   const cb = () => {};
