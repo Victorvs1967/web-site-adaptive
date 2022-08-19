@@ -26,7 +26,7 @@ export const ttfToWoff = () => app.gulp.src(app.path.src.fonts)
 
 export const fontsStyle = async () => {
   const cb = () => {};
-  const fontsFile = `${app.path.srcFolder}/styles/_fonts.sass`;
+  const fontsFile = `${app.path.srcFolder}/styles/includes/_fonts.sass`;
   fs.readdir(app.path.dest.fonts, (err, fontsFiles) => {
     if (fontsFiles) {
       if (!fs.existsSync(fontsFile)) {
@@ -62,7 +62,7 @@ export const fontsStyle = async () => {
           }
         }
       } else {
-        console.log('file styles/_fonts.sass already exist...');
+        console.log('file styles/includes/_fonts.sass already exist...');
       }
     }
   });

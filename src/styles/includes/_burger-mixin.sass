@@ -1,4 +1,4 @@
-@mixin burger($color, $size)
+@mixin burger($color, $size, $top: 3rem, $right: 2rem)
   $line-thin: calc($size / 10)
   .burger-menu
     &__control
@@ -6,8 +6,8 @@
       height: $size
       display: block
       position: absolute
-      top: 2.5vh
-      left: 95vw
+      top: $top
+      right: $right
       background-color: transparent
       border: none
       cursor: pointer
