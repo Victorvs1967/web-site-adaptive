@@ -1,0 +1,44 @@
+@media(max-width: 765px)
+  #toggle-menu
+    width: 100%
+    padding: .8rem
+    clear: both
+    display: flex
+    justify-content: center
+    background: $main-yellow
+    transition: .3s linear all
+    -webkit-transition: .3s linear all
+    &:hover
+      background: $main-yellow-dark
+  #checkbox-menu:checked + label
+    .header-nav__menu
+      &_touch
+        height: 35rem
+      &_item
+        opacity: 1
+        visibility: visible
+        transition: .4s linear all
+        -webkit-transition: .4s linear all
+        padding: 0.3rem 0
+  .header-nav__menu
+    height: 0
+    &_link
+      margin: 0 auto
+    &_item
+      display: flex
+      align-self: center
+      width: 95%
+      opacity: 0
+      visibility: hidden
+    &_touch
+      display: flex
+      flex-direction: column
+      justify-content: space-around
+      align-items: center
+      transition: .4s linear height
+      -webkit-transition: .4s linear height
+      .contacts,
+      .logo
+        margin-right: 0
+      .logo
+        font-size: 2rem
