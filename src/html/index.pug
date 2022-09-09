@@ -3,8 +3,18 @@ extends includes/_layout
 block title
   title Main Page 
 
-block content 
-
+block content
+  section.section-slider
+    .container.container-slider
+      h1.container-slider__title Adatipive Slider
+      .slider
+        .slider-line
+          each image in images
+            .slider__item
+              img(src= '@img/' + image, alt= image).slider__image
+        .slider__controls
+          button.slider__controls__btn.slider__controls__btn_prev &#8249;
+          button.slider__controls__btn.slider__controls__btn_next &#8250;
 
     //-   .social-networks
     //-     +svg-icon('telegram', 'social-networks__icon')
