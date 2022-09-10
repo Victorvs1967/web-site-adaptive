@@ -4,14 +4,28 @@ block title
   title Main Page 
 
 block content
-  section.section-slider
-    .container.container-slider
-      h1.container-slider__title Adatipive Slider
-      .slider
-        .slider-line
-          each image in images
-            .slider__item
-              img(src= '@img/' + image, alt= image).slider__image
+  main.main
+    section.section-intro.section-intro__wrapper
+      .section-intro__image 
+        p.section-intro__text 
+          | Find Your New<br>Modern Apartment
+      .section-intro__contacts
+        p.section-intro__contacts_phone 
+          +svg-icon('phone', 'intro__icon')
+          span (000)&nbsp;555&nbsp;33&nbsp;22
+        p.section-intro__contacts_address 
+          +svg-icon('map', 'intro__icon')
+          span Melbourn, Australia
+
+
+    section.section-slider
+      .container.container-slider
+        h1.container-slider__title Adatipive Slider
+        .slider
+          .slider-line
+            each image in images
+              .slider__item
+                img(src= '@img/' + image, alt= image).slider__image
         .slider__controls
           button.slider__controls__btn.slider__controls__btn_prev &#8249;
           button.slider__controls__btn.slider__controls__btn_next &#8250;

@@ -13,8 +13,8 @@ export const styles = () => app.gulp.src(app.path.src.styles, { sourcemaps: app.
     title: "SASS",
     message: "Error: <%= error.message %>"
   })))
-  .pipe(app.plugins.replace(/@img\//g, '../img/'))
   .pipe(sass({ outputStyle: 'compressed' }))
+  .pipe(app.plugins.replace(/@img\//g, '../img/'))
   .pipe(app.plugins.if(app.isBuild, groupcssmedia()))
   .pipe(app.plugins.if(app.isBuild, webpcss({
     webpClass: '.webp',
