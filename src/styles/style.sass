@@ -3,10 +3,6 @@
 @import './includes/reset'
 @import './includes/mixins'
 
-@import './includes/_header'
-@import './includes/_intro'
-@import './includes/_slider'
-
 html,
 body
   scroll-behavior: smooth
@@ -20,6 +16,16 @@ body
   height: 100vh
   font-size: 1.4rem
   line-height: 1.6
+
+.wrapper
+  max-width: 110rem
+  width: 100%
+  margin: 0 auto
+
+@import './includes/_header'
+@import './includes/_intro'
+@import './includes/_stats'
+@import './includes/_slider'
 
 
 @import './includes/media'
