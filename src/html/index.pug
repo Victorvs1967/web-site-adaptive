@@ -38,6 +38,26 @@ block content
             span.section-stats__numbers_square_value 7231
             span.section-stats__numbers_square_descr Appartments
 
+    section.section-apartments
+      .section-apart.wrapper
+        h2.section-apart__title More then 500+<br>Apartaments of Rent
+        .section-apart__cards
+          each i in [1, 2, 3, 4, 5, 6]
+            .section-apart__card
+              img(src="@img/F01_01.jpg", alt="apartament").section-apart__card_image
+              .section-apart__card_container
+                p.section-apart__card_text Lorem ipsum dolor sit amet consectetur.
+                .section-apart__card_info
+                  .section-apart__card_price $3,500
+                  .section-apart__card_desc 
+                    span 🚿 2 BA
+                    span 🛌 2 BD
+        .section-apart__controls
+          form.section-apart__controls_search
+            input(type="text", placeholder="Search Locations").section-apart__controls_input
+            input(type="submit", value="Search").section-apart__controls_input
+          button.section-apart__btn View All Apartments
+
     section.section-slider
       .container.container-slider
         h1.container-slider__title Adatipive Slider
