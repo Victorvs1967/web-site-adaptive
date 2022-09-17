@@ -1,0 +1,44 @@
+.section-steps
+  &__title
+    margin-top: 5.5rem
+    margin-bottom: 3.5rem
+  &__text
+    font-size: 1.3rem
+    line-height: 2.7rem
+  &__content
+    margin-bottom: 5rem
+    display: flex
+    justify-content: space-between
+  &__card
+    width: 34rem
+    height: 38rem
+    background: $main-white
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.3)
+    overflow: hidden
+    &:hover
+      background: $main-yellow
+      color: $main-white
+      .section-steps__info_last
+        border-bottom: 3px solid $main-white
+  &__number
+    position: relative
+    top: -13rem
+    left: -3rem
+    font-size: 20rem
+    font-weight: 500
+  &__desc
+    font-size: 1.4rem
+    margin: -13rem 0 2rem 4rem
+    span
+      margin-right: 1.5rem
+  &__info
+    margin-left: 7rem
+    line-height: 2.9rem
+    &_last
+      display: inline-block
+      margin-left: 7rem
+      margin-top: 2rem
+      border-bottom: 3px solid $main-dark
+
+.mb-7
+  margin-bottom: 7rem
