@@ -5,6 +5,6 @@ import { burgerMenu } from './includes/burger-menu.js';
 // Initiate
 // burgerMenu();
 
-slider();
+// slider();
 
 functions.isWebp();
