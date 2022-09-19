@@ -125,6 +125,25 @@ block content
           p.section-services__desc_text
             | Lorem ipsum dolor sit amet consectetur, adipisicing elit. Non enim libero vero dolor, quasi quis numquam. Dolorum blanditiis, pariatur soluta consequatur illo laboriosam?
         
-
-    //-   .social-networks
-    //-     +svg-icon('telegram', 'social-networks__icon')
+    section.section-agents
+      .wrapper
+        h2.section-agents__title Meet Our&nbsp;Agents
+        p.section-agents__text
+          | Lorem ipsum, dolor sit amet consectetur adipisicing.
+        p.section-agents__text
+          | Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br/>Sed, placeat. Laboriosam, iste!
+        .section-agents__cards
+          each i in [1, 2, 3]
+            .section-agents__card
+              img(src="@img/agent.jpg", alt="agent").section-agents__image
+              .section-agents__card_info
+                p.section-agents__card_title Agent
+                .section-agents__card_desc
+                  p.section-agents__card_name Mr. Luke Skywalker
+                  .section-agents__card_socials
+                    a(href="#!").section-agents__card_socials_link
+                      +svg-icon('facebook-square', 'section-agents__card_socials__icon')
+                    a(href="#!").section-agents__card_socials_link
+                      +svg-icon('telegram', 'section-agents__card_socials__icon')
+                    a(href="#!").section-agents__card_socials_link
+                      +svg-icon('linkedin', 'section-agents__card_socials__icon')
