@@ -5,20 +5,20 @@ block title
 
 block content
   main.main
-    section.section-intro.container
-      .section-intro__image 
-        p.section-intro__text 
-          | Find Your New<br>Modern Apartment
-      .section-intro__contacts
-        p.section-intro__contacts_phone 
-          +svg-icon('phone', 'intro__icon')
-          span (000)&nbsp;555&nbsp;33&nbsp;22
-        p.section-intro__contacts_address 
-          +svg-icon('map', 'intro__icon')
-          span Melbourn, Australia
+    //- section.section-intro.container
+    //-   .section-intro__image 
+    //-     p.section-intro__text 
+    //-       | Find Your New<br>Modern Apartment
+    //-   .section-intro__contacts
+    //-     p.section-intro__contacts_phone 
+    //-       +svg-icon('phone', 'intro__icon')
+    //-       span (000)&nbsp;555&nbsp;33&nbsp;22
+    //-     p.section-intro__contacts_address 
+    //-       +svg-icon('map', 'intro__icon')
+    //-       span Melbourn, Australia
 
     section.section-slider
-      .container.container-slider
+      .container-slider
         h1.container-slider__title Adatipive Slider
         .slider
           .slider-line
@@ -147,3 +147,36 @@ block content
                       +svg-icon('telegram', 'section-agents__card_socials__icon')
                     a(href="#!").section-agents__card_socials_link
                       +svg-icon('linkedin', 'section-agents__card_socials__icon')
+
+    section.section-add.container
+      .section-add__line
+        .section-add__image
+          img(src="@img/F01_01.jpg", alt="image").section-add__image_img
+          .section-add__location.section-add__location
+            +svg-icon('map', 'section-add__icon')
+            span Melburn, Australia
+        .section-add__desc
+          h3.section-add__desc_title Super Awesome Add
+          p.section-add__desc_text
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem in debitis autem saepe aut vel eius repudiandae maiores! Asperiores, ab sit accusamus aliquam quis rem, aspernatur molestias excepturi expedita ratione amet corporis iusto ullam obcaecati!
+      .section-add__line.section-add__line_right
+        .section-add__image
+          img(src="@img/F01_01.jpg", alt="image").section-add__image_img
+          .section-add__location.section-add__location_right
+            +svg-icon('map', 'section-add__icon')
+            span Melburn, Australia
+        .section-add__desc.section-add__desc
+          h3.section-add__desc_title.section-add__desc_title_right Super Awesome Add
+          p.section-add__desc_text.section-add__desc_text_right
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem in debitis autem saepe aut vel eius repudiandae maiores! Asperiores, ab sit accusamus aliquam quis rem, aspernatur molestias excepturi expedita ratione amet corporis iusto ullam obcaecati!
+      .section-add__line 
+        .section-add__image
+          img(src="@img/F01_01.jpg", alt="image").section-add__image_img
+          .section-add__location
+            +svg-icon('map', 'section-add__icon')
+            span Melburn, Australia
+        .section-add__desc
+          h3.section-add__desc_title Super Awesome Add
+          p.section-add__desc_text
+            | Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem in debitis autem saepe aut vel eius repudiandae maiores! Asperiores, ab sit accusamus aliquam quis rem, aspernatur molestias excepturi expedita ratione amet corporis iusto ullam obcaecati!
+          button(type='button').section-add__btn Show me more
