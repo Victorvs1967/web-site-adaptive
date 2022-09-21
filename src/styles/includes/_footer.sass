@@ -1,0 +1,56 @@
+.footer
+  padding-top: 5rem
+  padding-bottom: 8rem
+  background: $main-dark
+  color: $main-white
+  &-header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &__title
+      font-size: 4rem
+      line-height: 1.2
+    &__search
+      width: 44rem
+      height: 7rem
+      padding-left: 2.7rem
+      display: flex
+      align-self: center
+      background: $main-white
+    &__input[type=text]
+      width: 100%
+      background: url('@img/icons/icons.svg#right-arrow') no-repeat 94% center
+      background-size: 6%
+      &::placeholder
+        font-size: 1.5rem
+        color: $main-dark
+  &__line
+    width: 100%
+    height: 1px
+    margin-top: 4.7rem
+    margin-bottom: 7rem
+    background: $main-lite
+    opacity: .3
+  &-links
+    padding-right: 9rem
+    display: flex
+    justify-content: space-between
+    &__logo
+      margin-right: 25%
+      font-size: 2.5rem
+  &__link
+    display: flex
+    flex-direction: column
+    &_name
+      margin-bottom: 3.5rem
+      text-transform: uppercase
+      font-size: 1.3rem
+      color: $main-gray-dark
+    &_item
+      margin-bottom: 2rem
+      font-size: 1.3rem
+      color: $main-white
+      &:hover
+        opacity: .5
+
+
